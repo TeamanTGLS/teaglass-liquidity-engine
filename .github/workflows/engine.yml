@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Write wallet.json
-        run: echo '${{ secrets.WALLET_JSON }}' > wallet.json
+        run: echo "${{ secrets.WALLET_JSON }}" > wallet.json
 
       - name: Run engine
         run: node index.js
