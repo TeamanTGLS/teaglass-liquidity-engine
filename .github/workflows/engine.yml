@@ -22,5 +22,8 @@ jobs:
       - name: Write wallet.json
         run: echo "${{ secrets.WALLET_JSON }}" > wallet.json
 
+      - name: Write config.json
+        run: echo "${{ secrets.CONFIG_JSON }}" > config.json
+
       - name: Run engine
         run: node index.js
